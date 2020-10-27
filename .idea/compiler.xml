@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.12/48e4e5d60309ebd833bc528dcf77668eab3cd72c/lombok-1.18.12.jar" />
+        </processorPath>
+        <module name="eve-service.eve-contents.main" />
+        <module name="eve-service.eve-item.main" />
+        <module name="eve-service.eve-player.main" />
+        <module name="eve-service.eve-purchase.main" />
+        <module name="eve-service.eve-achievement.main" />
+        <module name="eve-service.eve-gateway.main" />
+        <module name="eve-service.eve-placement.main" />
+        <module name="eve-service.eve-product.main" />
+        <module name="eve-service.eve-delivery.main" />
+        <module name="eve-service.eve-auth.main" />
+        <module name="eve-service.eve-redeem.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="15">
+      <module name="eve-placement" target="15" />
+      <module name="eve-placement_main" target="15" />
+      <module name="eve-placement_test" target="15" />
+      <module name="eve-player" target="15" />
+      <module name="eve-player_main" target="15" />
+      <module name="eve-player_test" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,7 @@
+package com.nexon.eve.placement.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PlacementController {
+}

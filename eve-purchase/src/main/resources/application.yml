@@ -1,0 +1,43 @@
+server:
+  port:
+
+spring:
+  profiles:
+    - local
+    - alpah
+  webflux:
+    base-path: /api/v1
+  cloud:
+    stream:
+      default-binder: kafka
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
+      bindings:
+        input:
+          binder: kafka
+          destination: 'topic' ## todo
+          contentType: application/json
+          group: 'group' ## todo
+  zipkin:
+    base-url: 'https://eve.nexonpromo.com'
+  sleuth:
+    web:
+      skip-pattern: '(/ping)'
+    sampler:
+      probability: 1.0
+---
+spring:
+  profiles:
+    - qa
+
+---
+spring:
+  profiles:
+    - pre
+
+---
+spring:
+  profiles:
+    - live

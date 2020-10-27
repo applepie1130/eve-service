@@ -1,0 +1,38 @@
+server:
+  port:
+
+spring:
+  profiles:
+    - local
+    - alpah
+  webflux:
+    base-path: /api/v1
+  redis:
+    host: 'localhost'
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 2
+  zipkin:
+    base-url: https://eve.nexonpromo.com
+  sleuth:
+    web:
+      skip-pattern: (/ping)
+    sampler:
+      probability: 1.0
+---
+spring:
+  profiles:
+    - qa
+
+---
+spring:
+  profiles:
+    - pre
+
+---
+spring:
+  profiles:
+    - live
